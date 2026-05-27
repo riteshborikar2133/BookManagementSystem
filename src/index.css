@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+/* 1. Define the Dark Mode Variant */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary-50: #f0f7ff;
+  --color-primary-100: #e0effe;
+  --color-primary-500: #0284c7;
+  --color-primary-600: #0369a1;
+
+  --color-secondary-50: #fdf4ff;
+  --color-secondary-500: #d946ef;
+}
+
+/* 2. Optional: Global Background/Text Transitions */
+@layer base {
+  body {
+    @apply bg-white text-slate-900 transition-colors duration-300;
+  }
+  .dark body {
+    @apply bg-slate-950 text-slate-100;
+  }
+}

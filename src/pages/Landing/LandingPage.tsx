@@ -1,8 +1,7 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import {
   BookOpen,
   Shield,
-  BarChart3,
   Layers,
   ArrowRight,
   Star,
